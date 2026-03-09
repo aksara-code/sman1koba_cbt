@@ -1,3 +1,23 @@
+<?php
+// Ambil data identitas perangkat yang mengakses website
+$userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+
+// Cek apakah ada kata kunci dari aplikasi SMANSA EXAMBRO
+if (strpos($userAgent, 'SMANSAEXAMBRORESMI2026ANDRIANSISNAIRAWATI') === false) {
+    // Jika TIDAK ADA (berarti dibuka pakai Chrome/Browser lain)
+    
+    // Tampilkan pesan error dan desain simpel
+    echo "<!DOCTYPE html><html><head><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Akses Ditolak</title></head>";
+    echo "<body style='background-color:#f8d7da; color:#721c24; font-family:sans-serif; text-align:center; padding-top:20%;'>";
+    echo "<h1>Akses Ilegal Terdeteksi ⚠️</h1>";
+    echo "<p>Halaman ini HANYA bisa diakses melalui Aplikasi <b>SMANSA EXAMBRO</b> resmi sekolah.</p>";
+    echo "<p>Silakan tutup browser ini dan buka aplikasi ujian Anda.</p>";
+    echo "</body></html>";
+    
+    // Matikan eksekusi script agar form login/soal tidak dimuat sama sekali
+    exit; 
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -43,7 +63,7 @@
     
   </head>
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="skin-green layout-top-nav">
+  <body class="skin-blue layout-top-nav">
     <div class="wrapper">
 
       <header class="main-header">               
@@ -85,7 +105,7 @@
 			?>
         </div>
         <div class="container">
-          <strong>&copy; 2026 achmadlutfi.wordpress.com</strong>
+          <strong>&copy; 2026 IT TEAM SMAN 1 KOBA</strong>
         </div><!-- /.container -->
       </footer>
     </div><!-- ./wrapper -->

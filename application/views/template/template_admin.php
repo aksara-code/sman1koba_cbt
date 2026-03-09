@@ -128,7 +128,7 @@
 		} 
   </script>
   </head>
-  <body class="skin-green sidebar-mini">
+  <body class="skin-blue sidebar-mini">
     <div class="wrapper">
 
       <header class="main-header">
@@ -188,7 +188,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="<?php echo base_url(); ?>public/plugins/adminlte/img/avatar04.png" class="img-circle" alt="User Image" />
+              <img src="<?php echo base_url(); ?>public/images/logo_sma.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p><?php if(!empty($nama)){ echo $nama; }else{ echo 'Administrator'; } ?></p>
@@ -226,7 +226,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> <?php if(!empty($site_version)){ echo $site_version; } ?>
         </div>
-        <strong>&copy; 2026 achmadlutfi.wordpress.com</strong>
+        <strong>&copy; IT TEAM SMAN 1 KOBA</strong>
       </footer>
 
     </div><!-- ./wrapper -->

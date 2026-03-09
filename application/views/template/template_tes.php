@@ -93,7 +93,7 @@
   </script>
   </head>
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="skin-green layout-top-nav">
+  <body class="skin-blue layout-top-nav">
     <div class="wrapper">
 
       <header class="main-header">               
@@ -153,7 +153,7 @@
           <?php if(!empty($nama)){ echo $nama; } ?> | <strong> <a href="<?php echo site_url(); ?>/welcome/logout" >Log out</a></strong>
         </div>
         <div class="container">
-          <strong>&copy; 2026 achmadlutfi.wordpress.com</strong>
+          <strong>&copy; 2026 IT TEAM SMAN 1 KOBA</strong>
         </div><!-- /.container -->
       </footer>
     </div><!-- ./wrapper -->
